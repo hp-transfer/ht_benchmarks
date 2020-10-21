@@ -1,0 +1,9 @@
+# Python
+__pycache__
+*.egg-info
+
+# IDEA
+.idea
+
+# Experiments and data
+../hp_transfer_aa_experiments/data/*
