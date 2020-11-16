@@ -11,14 +11,14 @@ readme = "README.md"
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "<3.8,>=3.6.1"
 ConfigSpace = "^0.4.11"
 openml = "^0.10.2"
 more_itertools = "^8.3.0"
 scipy = "^1.4.1"
 scikit-learn = "0.19.2"
 h5py = "^2.0.0"
-hpolib2 = {git = "https://github.com/automl/HPOlib2.git", rev = "v.0.0.4"}
+hpolib2 = {git = "https://github.com/automl/HPOBench.git", rev = "v.0.0.4"}
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"
