@@ -1,12 +1,12 @@
 [build-system]
-requires = ["poetry>=1.0.10"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "hp_transfer_benchmarks"
 version = "0.1.0"
 description = ""
-authors = ["Danny Stoll, Diane Wagner"]
+authors = ["Danny Stoll", "Diane Wagner"]
 readme = "README.md"
 license = "MIT"
 
@@ -18,7 +18,7 @@ more_itertools = "^8.3.0"
 scipy = "^1.4.1"
 scikit-learn = "0.19.2"
 h5py = "^2.0.0"
-hpolib2 = {git = "https://github.com/automl/HPOBench.git", rev = "v.0.0.4"}
+hpolib2 = {git = "https://github.com/DaStoll/HPOBench.git", rev = "v.0.0.4_fix"}
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"
