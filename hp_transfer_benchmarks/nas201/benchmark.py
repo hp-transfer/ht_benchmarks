@@ -1,14 +1,13 @@
-from hpobench.benchmarks.nas import nasbench_201
-
 from hp_transfer_benchmarks.benchmark_settings import SingleTaskSetting
 from hp_transfer_benchmarks.nas201._configspaces import NASConfigspaceA
 from hp_transfer_benchmarks.nas201._configspaces import NASConfigspaceB
 from hp_transfer_benchmarks.task import Task
+from hpobench.benchmarks.nas import nasbench_201
 
 
 def _get_core_benchmark(dataset_id):
     if dataset_id == "cifar10":
-        return nasbench_201.Cifar10NasBench201Benchmark()
+        return nasbench_201.Cifar10ValidNasBench201Benchmark()
     elif dataset_id == "cifar100":
         return nasbench_201.Cifar100NasBench201Benchmark()
     elif dataset_id == "ImageNet16-120":
@@ -61,7 +60,9 @@ class NASBenchmark:
 
         representation = []
         return Task(
-            evaluate_fn=evaluate_fn, representation=representation, identifier=identifier,
+            evaluate_fn=evaluate_fn,
+            representation=representation,
+            identifier=identifier,
         )
 
     def development_stage_to_configspace(self, development_stage):
