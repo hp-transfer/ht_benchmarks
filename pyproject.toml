@@ -11,6 +11,7 @@ python = ">=3.7,<3.9"
 ConfigSpace = "^0.4.11"
 more_itertools = "^8.3.0"
 h5py = "^2.0.0"
+hpobench = {git = "https://github.com/automl/HPOBench.git", rev="0.0.9"}
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"

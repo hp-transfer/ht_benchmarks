@@ -1,4 +1,4 @@
-from hpolib.benchmarks.nas import nasbench_201
+from hpobench.benchmarks.nas import nasbench_201
 
 from hp_transfer_benchmarks.benchmark_settings import SingleTaskSetting
 from hp_transfer_benchmarks.nas201._configspaces import NASConfigspaceA
